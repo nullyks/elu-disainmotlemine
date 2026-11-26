@@ -462,6 +462,20 @@ p {
   background: var(--surface);
 }
 
+.project-goals {
+  margin-top: clamp(2.1rem, 5vw, 3.75rem);
+}
+
+.project-goals ul {
+  max-width: 76ch;
+  margin: .85rem 0 0;
+  padding-left: 1.25rem;
+}
+
+.project-goals li + li {
+  margin-top: .5rem;
+}
+
 .result {
   border-color: #d7e4d4;
   background: #edf3eb;
