@@ -3,71 +3,107 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Anduritega kastmissüsteem Tallinna Ülikooli siseaia suviseks hoolduseks.">
+  <meta name="description" content="Tallinna Ülikooli siseaia kastmissüsteemi kavand ja elektroonikakatsed, mille eesmärk oli hoida taimi kastetuna ka suvepuhkuste ajal.">
   <title>Siseaia automaatkastmine | Disainmõtlemine, 3D ja robootika</title>
   <link rel="stylesheet" href="assets/styles.css">
-  <script src="assets/navigation.js" defer></script>
+  <script src="assets/gallery.js" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#sisu">Liigu sisu juurde</a>
   <header class="site-header">
     <div class="wrap header-inner">
       <a class="site-name" href="index.html">Disainmõtlemine, 3D ja robootika</a>
-      <nav class="site-nav" aria-label="Põhinavigatsioon">
-        <a href="index.html">Avaleht</a>
-        <details class="group-menu">
-          <summary>Rühmad</summary>
-          <ul>
-            <li><a href="litofaanialamp.html">Litofaanialamp</a></li>
-            <li><a href="koolikoti-konks.html">Koolikoti konks</a></li>
-            <li><a href="valt-e.html">Lugemist toetav seade Valt-e</a></li>
-            <li><a href="automaatkastmine.html" aria-current="page">Siseaia automaatkastmine</a></li>
-          </ul>
-        </details>
+      <nav class="site-nav" aria-label="Rühmade projektid">
+        <ul>
+          <li><a href="litofaanialamp.html">Litofaanialamp</a></li>
+          <li><a href="koolikoti-konks.html">Koolikoti konks</a></li>
+          <li><a href="valt-e.html">Lugemisseade Valt-e</a></li>
+          <li><a href="automaatkastmine.html" aria-current="page">Siseaia automaatkastmine</a></li>
+        </ul>
       </nav>
     </div>
   </header>
   <main id="sisu">
-    <div class="detail-hero">
-      <div class="wrap">
-        <a class="back-link" href="index.html#ruhmad"><span aria-hidden="true">←</span> Kõik rühmad</a>
-        <p class="eyebrow">Rühm 4 · Andurid ja automaatika</p>
-        <h1>Siseaia automaatkastmine</h1>
-        <p class="detail-summary">Anduritega kastmissüsteem Tallinna Ülikooli siseaia suviseks hoolduseks.</p>
+    <section class="detail-hero" aria-labelledby="ruhma-pealkiri">
+      <div class="wrap detail-hero-grid">
+        <div>
+          <a class="back-link" href="index.html#ruhmad"><span aria-hidden="true">←</span> Kõik rühmad</a>
+          <p class="eyebrow">Rühm 4 · Andurid ja automaatika</p>
+          <h1 id="ruhma-pealkiri">Siseaia automaatkastmine</h1>
+          <p class="detail-summary">Tallinna Ülikooli siseaia kastmissüsteemi kavand ja elektroonikakatsed, mille eesmärk oli hoida taimi kastetuna ka suvepuhkuste ajal.</p>
+        </div>
+        <figure class="group-figure group-figure-featured">
+          <a href="assets/prototuubid/kastmine-skeem.webp" class="photo-link" aria-label="Vaata suuremalt. Pumbaga kastmissüsteemi kavand">
+            <img src="assets/prototuubid/kastmine-skeem.webp" width="1312" height="1199" alt="Skeem veemahuti, pumba, voolikute, juhtplaadi ja andurite seostest." decoding="async">
+          </a>
+          <figcaption>Pumbaga kastmissüsteemi kavand</figcaption>
+        </figure>
       </div>
-    </div>
+    </section>
     <div class="wrap detail-layout">
       <nav class="section-nav" aria-label="Selle lehe jaotised">
         <ul>
           <li><a href="#probleem">Probleem ja eesmärk</a></li>
           <li><a href="#lahendus">Lahendus</a></li>
           <li><a href="#protsess">Arendusprotsess</a></li>
+          <li><a href="#pildid">Pildid ja joonised</a></li>
           <li><a href="#tulemus">Tulemus</a></li>
         </ul>
       </nav>
-      <article class="detail-content" aria-label="Siseaia automaatkastmine">
+      <div class="detail-content">
         <section id="probleem">
           <h2>Probleem ja eesmärk</h2>
-          <p>Tallinna Ülikooli siseaia taimed vajavad kastmist ka suvepuhkuste ajal. Varasem kastmislahendus andis rühmale lähtekoha töökindlama süsteemi kavandamiseks.</p>
+          <p>Ülikooli siseaia taimed vajavad vett ka juulis ja augustis, kui igapäevast käsitsi kastmist on raske korraldada. Rühm vaatas üle varasemad süsteemid ja küsitles aia vajadustega kursis olnud juhendajat.</p>
+          <p>Varasemas raskusjõul töötanud lahenduses ei pidanud veemahuti alusraam vastu ning akupanga tööaeg jäi lühikeseks. Projekteerimise lähtepunktiks võeti olemasolev 200-liitrine mahuti ja voolikud. Lahendus pidi olema hõlpsasti hooldatav ja arvestama välitingimustega.</p>
         </section>
         <section id="lahendus">
           <h2>Lahendus</h2>
-          <p>Kavandatud süsteem viib vee mahutist voolikute kaudu taimedeni. Juhtseade kasutab niiskusanduri näitu kastmisvajaduse hindamiseks ja juhib pumpa. Prototüübis uuriti ka veetaseme jälgimist.</p>
+          <p>Rühm võrdles kaht varianti: raskusjõul töötavat elektrilise kraaniga süsteemi ja veepumbaga lahendust. Prototüübi jaoks valiti pump, mis viib vee mahutist voolikute kaudu taimedeni.</p>
+          <p>Kavandis mõõdab mullaniiskuse andur, millal kastmist alustada, ning veetaseme andur aitab jälgida veevaru. Rühm kavandas pumba juhtimise kontrolleriga ja arvestas sellega, et toide peab püsima töökorras ka siis, kui aias kedagi pole.</p>
         </section>
         <section id="protsess">
           <h2>Arendusprotsess</h2>
-          <ol>
-            <li>Rühm tutvus siseaiaga ja küsis varasema süsteemi kohta sisendit, et selgitada välja hooldusvajadused ja tehnilised piirangud.</li>
-            <li>Valiti pumba, andurite, juhtseadme ja voolikute kombinatsioon ning koostati süsteemi skeem.</li>
-            <li>Prooviti juhtplaati ja veetaseme andurit. Pumba juhtimiseks koostati esmane ajastatud töötsükliga programm.</li>
+          <ol class="timeline">
+            <li>
+              <p class="timeline-date">10.–24. september</p>
+              <h3>Aia vaatlus ja tellija intervjuu</h3>
+              <p>10. septembril tutvus rühm siseaia ja varasemate katsetega. 17. septembri intervjuus täpsustati olemasolevaid vahendeid ja varasemate lahenduste kitsaskohti. Kuu lõpus koondati sisend kasutajauuringusse ja nõuetesse.</p>
+            </li>
+            <li>
+              <p class="timeline-date">1.–23. oktoober</p>
+              <h3>Tehniline kirjeldus ja pumbaga lahenduse valik</h3>
+              <p>Oktoobri alguses tutvuti Arduino keskkonnas juhtplaadi programmeerimisega. Rühm võrdles elektrilist kraani ja pumpa, valis pumbaga suuna ning koostas andurite, juhtplaadi, toite ja ühenduste loendi. Lahenduse kavandit tutvustati vahenädalal.</p>
+            </li>
+            <li>
+              <p class="timeline-date">5. november</p>
+              <h3>Juhtplaadi ja veetaseme anduri katse</h3>
+              <p>Rühm proovis Arduino juhtplaati ning kontrollis kuivas katses veetaseme anduri kontakti tööd. 5. novembri katsesalvestis näitab juhtplaadi ja anduri ühendust töölaual.</p>
+            </li>
+            <li>
+              <p class="timeline-date">Novembri prototüübikatsed</p>
+              <h3>Andurinäidud ja kastmisloogika</h3>
+              <p>Päevikus on kirjas mullaniiskuse anduri võrdluskatsed vees, kuivas mullas ja veidi niiskes mullas. Rühm kasutas mõõtmisi läviväärtuste arutamiseks ning proovis programmis ajastatud väljundit ja niiskuse põhjal pumba juhtimist.</p>
+            </li>
           </ol>
+        </section>
+        <section id="pildid">
+          <h2>Pildid ja joonised</h2>
+          <div class="group-gallery">
+          <figure class="group-figure">
+            <a href="assets/prototuubid/kastmine-juhtplaadi-katse.webp" class="photo-link" aria-label="Vaata suuremalt. Juhtplaadi katse, kaader 5. novembri videost">
+              <img src="assets/prototuubid/kastmine-juhtplaadi-katse.webp" width="930" height="453" alt="Juhtplaat koos kaablitega katse käigus töölaual." loading="lazy" decoding="async">
+            </a>
+            <figcaption>Juhtplaadi katse, kaader 5. novembri videost</figcaption>
+          </figure>
+          </div>
         </section>
         <section id="tulemus" class="result">
           <h2>Tulemus</h2>
-          <p>Valmis süsteemi skeem ja katsetati prototüübi elektroonika osi. Enne regulaarset kasutust siseaias vajab lahendus terviksüsteemi katset, sealhulgas vee jaotumise ja andurite töö kontrolli.</p>
+          <p>Valmis kastmissüsteemi skeem ja rühm katsetas juhtplaati ning andurite tööd. Prototüübi programm eristas kuivemat ja märjemat mulda ja sisaldas pumba juhtimise loogikat.</p>
+          <p>Siseaias kasutusele võtmiseks tuleb terviksüsteemis kontrollida vee ühtlast jaotumist, niiskuslävede sobivust ning aku ja ühenduste töökindlust. Rühma materjalid dokumenteerivad komponentide katseid ja lahenduse kavandit.</p>
         </section>
-        <p class="source"><strong>Allikad.</strong> Rühma projektipäevik, vahekokkuvõte ja kastmissüsteemi skeem.</p>
-      </article>
+        <p class="source"><strong>Allikad.</strong> Rühma projektipäevik, tegevuskava, vahekokkuvõte, kastmissüsteemi skeem ja 5. novembri katsesalvestis.</p>
+      </div>
     </div>
   </main>
   <footer class="site-footer">
@@ -76,5 +112,12 @@
       <a href="https://elu.tlu.ee/et/projektid/disainmotlemine-3d-modelleerimine-ja-robootika-0">Projekti kirjeldus ELU veebis <span aria-hidden="true">↗</span></a>
     </div>
   </footer>
+  <dialog class="photo-dialog" aria-labelledby="pildi-pealkiri">
+    <form method="dialog">
+      <button type="submit">Sulge</button>
+    </form>
+    <div class="photo-frame"></div>
+    <p id="pildi-pealkiri">Suurendatud pilt</p>
+  </dialog>
 </body>
 </html>

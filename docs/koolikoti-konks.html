@@ -3,71 +3,131 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Teisaldatav konks, mis hoiab koolikoti laua juures ning põrandalt eemal.">
+  <meta name="description" content="Teisaldatava konksu prototüübid, mis annavad koolikotile kindla koha laua juures ja vabastavad põrandapinda.">
   <title>Koolikoti konks | Disainmõtlemine, 3D ja robootika</title>
   <link rel="stylesheet" href="assets/styles.css">
-  <script src="assets/navigation.js" defer></script>
+  <script src="assets/gallery.js" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#sisu">Liigu sisu juurde</a>
   <header class="site-header">
     <div class="wrap header-inner">
       <a class="site-name" href="index.html">Disainmõtlemine, 3D ja robootika</a>
-      <nav class="site-nav" aria-label="Põhinavigatsioon">
-        <a href="index.html">Avaleht</a>
-        <details class="group-menu">
-          <summary>Rühmad</summary>
-          <ul>
-            <li><a href="litofaanialamp.html">Litofaanialamp</a></li>
-            <li><a href="koolikoti-konks.html" aria-current="page">Koolikoti konks</a></li>
-            <li><a href="valt-e.html">Lugemist toetav seade Valt-e</a></li>
-            <li><a href="automaatkastmine.html">Siseaia automaatkastmine</a></li>
-          </ul>
-        </details>
+      <nav class="site-nav" aria-label="Rühmade projektid">
+        <ul>
+          <li><a href="litofaanialamp.html">Litofaanialamp</a></li>
+          <li><a href="koolikoti-konks.html" aria-current="page">Koolikoti konks</a></li>
+          <li><a href="valt-e.html">Lugemisseade Valt-e</a></li>
+          <li><a href="automaatkastmine.html">Siseaia automaatkastmine</a></li>
+        </ul>
       </nav>
     </div>
   </header>
   <main id="sisu">
-    <div class="detail-hero">
-      <div class="wrap">
-        <a class="back-link" href="index.html#ruhmad"><span aria-hidden="true">←</span> Kõik rühmad</a>
-        <p class="eyebrow">Rühm 2 · Kasutajauuring ja prototüüpimine</p>
-        <h1>Koolikoti konks</h1>
-        <p class="detail-summary">Teisaldatav konks, mis hoiab koolikoti laua juures ning põrandalt eemal.</p>
+    <section class="detail-hero" aria-labelledby="ruhma-pealkiri">
+      <div class="wrap detail-hero-grid">
+        <div>
+          <a class="back-link" href="index.html#ruhmad"><span aria-hidden="true">←</span> Kõik rühmad</a>
+          <p class="eyebrow">Rühm 2 · Kasutajauuring ja prototüüpimine</p>
+          <h1 id="ruhma-pealkiri">Koolikoti konks</h1>
+          <p class="detail-summary">Teisaldatava konksu prototüübid, mis annavad koolikotile kindla koha laua juures ja vabastavad põrandapinda.</p>
+        </div>
+        <figure class="group-figure group-figure-featured">
+          <a href="assets/prototuubid/konks-lauaserval.webp" class="photo-link" aria-label="Vaata suuremalt. Lauaserva konks kasutuskatsel">
+            <img src="assets/prototuubid/konks-lauaserval.webp" width="900" height="1600" alt="Kott ripub sinise konksuga lauaserva küljes." decoding="async">
+          </a>
+          <figcaption>Lauaserva konks kasutuskatsel</figcaption>
+        </figure>
       </div>
-    </div>
+    </section>
     <div class="wrap detail-layout">
       <nav class="section-nav" aria-label="Selle lehe jaotised">
         <ul>
           <li><a href="#probleem">Probleem ja eesmärk</a></li>
           <li><a href="#lahendus">Lahendus</a></li>
           <li><a href="#protsess">Arendusprotsess</a></li>
+          <li><a href="#pildid">Pildid ja joonised</a></li>
           <li><a href="#tulemus">Tulemus</a></li>
         </ul>
       </nav>
-      <article class="detail-content" aria-label="Koolikoti konks">
+      <div class="detail-content">
         <section id="probleem">
           <h2>Probleem ja eesmärk</h2>
-          <p>Klassiruumis põrandale jäetud kotid takistavad liikumist ja määrduvad. Rühm uuris, kuidas algklasside õpilased saaksid hoida kotti käeulatuses ja konksu eri laudade juures kasutada.</p>
+          <p>Rühm märkas, et algklassides jäetakse kotid tihti tooli kõrvale või vahekäiku. Põrandal olev kott võib määrduda ja liikumist takistada, laual aga võtab see ära õppevahendite ruumi.</p>
+          <p>Õpetajate ja koolitöötajatega tehtud intervjuud, vaatlused klassiruumis ja sööklas ning olemasolevate lahenduste võrdlus aitasid sõnastada peamise nõude: konks peab kinnituma kiiresti ja mööblit kahjustamata. Samuti tuli arvestada erineva paksusega lauaplaatide ja erinevate kotisangadega.</p>
         </section>
         <section id="lahendus">
           <h2>Lahendus</h2>
-          <p>Kavandati teisaldatav konks, mille kinnitamine ei nõua koolimööbli muutmist. Rühm uuris ka võimalust kohandada konksu õpilase nime või värviga ning lisada sellele helkurkleebise jaoks sobiv pind.</p>
+          <p>Rühm kavandas lauaservale asetatava konksu, mida saab õpilane ise ühest klassiruumist teise kaasa võtta. Kavandis arvestati ligikaudu 18–25 mm paksuste lauaplaatidega. Kinnitus pidi püsima koormuse all ning jätma lauapinna terveks.</p>
+          <p>Põhifunktsiooni kõrval uuriti, kas riputusaas ja helkurmaterjal võimaldaksid kanda konksu kooliteel koti küljes. Rühm kaalus ka nime ja värvi järgi isikupärastamist.</p>
         </section>
         <section id="protsess">
           <h2>Arendusprotsess</h2>
-          <ol>
-            <li>Õpetajate ja koolitöötajate intervjuud ning koolikeskkonna vaatlused aitasid sõnastada nõuded hoiustamisele.</li>
-            <li>Esimesi variante katsetati puidust ning seejärel prooviti 3D-printi ja erinevaid vorme.</li>
-            <li>Järveküla Kooli esimese klassi õpilastega kaaluti koolikotte ja koguti tagasisidet selle kohta, millised konksud neile meeldisid.</li>
+          <ol class="timeline">
+            <li>
+              <p class="timeline-date">10. september – 1. oktoober</p>
+              <h3>Teema valimine ja esimene kinnituskatse</h3>
+              <p>Rühm arutas septembris mitut disainiideed ja valis 1. oktoobriks kotikonksu ja helkuri ühise kavandi. Esimene laserlõigatud näidis näitas, et üks kuju ei sobi igale lauale. Paksema lauaplaadi puhul prooviti kinnitust ka tooli seljatoel.</p>
+            </li>
+            <li>
+              <p class="timeline-date">8.–15. oktoober</p>
+              <h3>Kuju ja materjalide võrdlus</h3>
+              <p>Kohandati prototüüpi, katsetati helkurvestist lõigatud riba ja arutati riputusaasa. Prototüübisprindis pöörati tähelepanu kahele põhiküsimusele: kas kott püsib konksu otsas ja kas konks ise püsib lauaserval. Rühm proovis nii puidust kui ka 3D-prinditud mudeleid.</p>
+            </li>
+            <li>
+              <p class="timeline-date">18.–28. oktoober</p>
+              <h3>Õpilaste ideed ja vaheesitlus</h3>
+              <p>Järveküla Koolis pakuti konksule erinevaid kujusid. Rühm valmistas osa neist laserlõikuril proovimudeliteks ning kaalus koolikotte. Päevikus ulatus ühe esialgse kaalumiskatse näit vahemikku 1,6–6 kg. 28. oktoobril esitleti disainiprotsessi vahenädalal.</p>
+            </li>
+            <li>
+              <p class="timeline-date">12.–19. november</p>
+              <h3>Kaalumine, eelistused ja helkurinäidis</h3>
+              <p>Päeviku 12. novembri sissekanne koondab esimese klassi õpilaste koolikottide kaalumise ja tagasiside konksuvariantide kohta. 19. novembriks valmis MDF-plaadist, helkurmaterjalist ja kahepoolsest teibist näidis.</p>
+            </li>
           </ol>
+        </section>
+        <section id="pildid">
+          <h2>Pildid ja joonised</h2>
+          <div class="group-gallery">
+          <figure class="group-figure">
+            <a href="assets/prototuubid/konks-klassiruum.webp" class="photo-link" aria-label="Vaata suuremalt. Koolikottide paigutus klassiruumis">
+              <img src="assets/prototuubid/konks-klassiruum.webp" width="1600" height="900" alt="Koolikotid laudade ja toolide kõrval klassiruumis." loading="lazy" decoding="async">
+            </a>
+            <figcaption>Koolikottide paigutus klassiruumis</figcaption>
+          </figure>
+          <figure class="group-figure">
+            <a href="assets/prototuubid/konks-joonis.webp" class="photo-link" aria-label="Vaata suuremalt. Konksu kuju ja mõõtude joonis">
+              <img src="assets/prototuubid/konks-joonis.webp" width="1600" height="1199" alt="Konksu perspektiiv- ja mõõtjoonis." loading="lazy" decoding="async">
+            </a>
+            <figcaption>Konksu kuju ja mõõtude joonis</figcaption>
+          </figure>
+          <figure class="group-figure">
+            <a href="assets/prototuubid/konks-variandid.webp" class="photo-link" aria-label="Vaata suuremalt. Võrdluseks valmistatud konksuvariandid">
+              <img src="assets/prototuubid/konks-variandid.webp" width="900" height="1600" alt="Neli eri kujuga kollast ja sinist proovikonksu." loading="lazy" decoding="async">
+            </a>
+            <figcaption>Võrdluseks valmistatud konksuvariandid</figcaption>
+          </figure>
+          <figure class="group-figure">
+            <a href="assets/prototuubid/konks-kaalumine.webp" class="photo-link" aria-label="Vaata suuremalt. Koolikoti kaalumine">
+              <img src="assets/prototuubid/konks-kaalumine.webp" width="1200" height="1600" alt="Koolikott kaalul." loading="lazy" decoding="async">
+            </a>
+            <figcaption>Koolikoti kaalumine</figcaption>
+          </figure>
+          <figure class="group-figure">
+            <a href="assets/prototuubid/konks-kotisang.webp" class="photo-link" aria-label="Vaata suuremalt. Kotisanga kinnitumise katse">
+              <img src="assets/prototuubid/konks-kotisang.webp" width="900" height="1600" alt="Kollase proovikonksu ja kotisanga lähivaade." loading="lazy" decoding="async">
+            </a>
+            <figcaption>Kotisanga kinnitumise katse</figcaption>
+          </figure>
+          </div>
         </section>
         <section id="tulemus" class="result">
           <h2>Tulemus</h2>
-          <p>Valmis mitu proovimudelit, mille põhjal võrreldi kuju ja kasutajate eelistusi. Rühm valmistas ka helkurpinnaga näidise. Mööblile sobivus, koormustaluvus ja helkurfunktsiooni toimivus jäid edasiste katsete teemadeks.</p>
+          <p>Valmis mitu eri kuju ja materjaliga proovimudelit ning eraldi helkurpinnaga näidis. Õpilaste ideed, eelistused ja kottide kaalumine aitasid rühmal siduda konksu kuju tegelike kasutusolukordadega.</p>
+          <p>Edasiseks jäi kontrollida, kuidas konks sobib eri koolilaudadele, millist koormust see korduval kasutamisel kannab ning kas helkurpind püsib ja toimib nõuetekohaselt.</p>
         </section>
-        <p class="source"><strong>Allikad.</strong> Rühma projektipäevik, kasutajauuringu kokkuvõte ja vaheesitluse tekst.</p>
-      </article>
+        <p class="source"><strong>Allikad.</strong> Rühma projektipäevik, kasutajauuringu kokkuvõte, disainibriif ja vaheesitluse tekst. Fotod ja joonised pärinevad rühma fotopangast ja disainikaustast.</p>
+      </div>
     </div>
   </main>
   <footer class="site-footer">
@@ -76,5 +136,12 @@
       <a href="https://elu.tlu.ee/et/projektid/disainmotlemine-3d-modelleerimine-ja-robootika-0">Projekti kirjeldus ELU veebis <span aria-hidden="true">↗</span></a>
     </div>
   </footer>
+  <dialog class="photo-dialog" aria-labelledby="pildi-pealkiri">
+    <form method="dialog">
+      <button type="submit">Sulge</button>
+    </form>
+    <div class="photo-frame"></div>
+    <p id="pildi-pealkiri">Suurendatud pilt</p>
+  </dialog>
 </body>
 </html>

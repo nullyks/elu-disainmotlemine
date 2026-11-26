@@ -3,71 +3,143 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Lugemisseadme prototüüp õpilastele, kes vajavad tekstist arusaamisel tuge.">
+  <meta name="description" content="Valt-e prototüüp ühendab eraldi lugemisseadme korpuse ning õpilasele ja õpetajale mõeldud rakenduse kavandi.">
   <title>Lugemist toetav seade Valt-e | Disainmõtlemine, 3D ja robootika</title>
   <link rel="stylesheet" href="assets/styles.css">
-  <script src="assets/navigation.js" defer></script>
+  <script src="assets/gallery.js" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#sisu">Liigu sisu juurde</a>
   <header class="site-header">
     <div class="wrap header-inner">
       <a class="site-name" href="index.html">Disainmõtlemine, 3D ja robootika</a>
-      <nav class="site-nav" aria-label="Põhinavigatsioon">
-        <a href="index.html">Avaleht</a>
-        <details class="group-menu">
-          <summary>Rühmad</summary>
-          <ul>
-            <li><a href="litofaanialamp.html">Litofaanialamp</a></li>
-            <li><a href="koolikoti-konks.html">Koolikoti konks</a></li>
-            <li><a href="valt-e.html" aria-current="page">Lugemist toetav seade Valt-e</a></li>
-            <li><a href="automaatkastmine.html">Siseaia automaatkastmine</a></li>
-          </ul>
-        </details>
+      <nav class="site-nav" aria-label="Rühmade projektid">
+        <ul>
+          <li><a href="litofaanialamp.html">Litofaanialamp</a></li>
+          <li><a href="koolikoti-konks.html">Koolikoti konks</a></li>
+          <li><a href="valt-e.html" aria-current="page">Lugemisseade Valt-e</a></li>
+          <li><a href="automaatkastmine.html">Siseaia automaatkastmine</a></li>
+        </ul>
       </nav>
     </div>
   </header>
   <main id="sisu">
-    <div class="detail-hero">
-      <div class="wrap">
-        <a class="back-link" href="index.html#ruhmad"><span aria-hidden="true">←</span> Kõik rühmad</a>
-        <p class="eyebrow">Rühm 3 · Õppedisain ja kasutajaliides</p>
-        <h1>Lugemist toetav seade Valt-e</h1>
-        <p class="detail-summary">Lugemisseadme prototüüp õpilastele, kes vajavad tekstist arusaamisel tuge.</p>
+    <section class="detail-hero" aria-labelledby="ruhma-pealkiri">
+      <div class="wrap detail-hero-grid">
+        <div>
+          <a class="back-link" href="index.html#ruhmad"><span aria-hidden="true">←</span> Kõik rühmad</a>
+          <p class="eyebrow">Rühm 3 · Õppedisain ja kasutajaliides</p>
+          <h1 id="ruhma-pealkiri">Lugemist toetav seade Valt-e</h1>
+          <p class="detail-summary">Valt-e prototüüp ühendab eraldi lugemisseadme korpuse ning õpilasele ja õpetajale mõeldud rakenduse kavandi.</p>
+        </div>
+        <figure class="group-figure group-figure-featured">
+          <a href="assets/prototuubid/valte-seade.webp" class="photo-link" aria-label="Vaata suuremalt. Valt-e korpus koos ekraani ja nuppudega">
+            <img src="assets/prototuubid/valte-seade.webp" width="1600" height="1200" alt="Valge prinditud korpus, millesse on paigaldatud ekraan ja nupud." decoding="async">
+          </a>
+          <figcaption>Valt-e korpus koos ekraani ja nuppudega</figcaption>
+        </figure>
       </div>
-    </div>
+    </section>
     <div class="wrap detail-layout">
       <nav class="section-nav" aria-label="Selle lehe jaotised">
         <ul>
           <li><a href="#probleem">Probleem ja eesmärk</a></li>
           <li><a href="#lahendus">Lahendus</a></li>
           <li><a href="#protsess">Arendusprotsess</a></li>
+          <li><a href="#pildid">Pildid ja joonised</a></li>
           <li><a href="#tulemus">Tulemus</a></li>
         </ul>
       </nav>
-      <article class="detail-content" aria-label="Lugemist toetav seade Valt-e">
+      <div class="detail-content">
         <section id="probleem">
           <h2>Probleem ja eesmärk</h2>
-          <p>Mõnel õpilasel on keeruline tekstist olulist infot leida, uusi sõnu mõista või loetust järeldusi teha. Rühm uuris, kuidas pakkuda harjutusi, mis arvestaksid õpilaste erineva lugemistasemega.</p>
+          <p>Rühm uuris, millist tuge vajavad õpilased, kellel on raske tekstist olulist infot leida, seoseid märgata ja järeldusi teha. Töö keskendus eelkõige kolmanda kooliastme õpilastele ning neid toetavatele õpetajatele ja tugispetsialistidele.</p>
+          <p>Intervjuudes tulid esile näiteks rea jälgimine, sõnade märkimine, teksti jagamine lühemateks osadeks ning küsimused loetu mõtestamiseks. Rühm kavandas lahenduse, kus õpetaja saab materjali kohandada ja õpilane lugemise ajal vajalikku tuge kasutada.</p>
         </section>
         <section id="lahendus">
           <h2>Lahendus</h2>
-          <p>Valt-e kavandati puuteekraaniga lugemisseadmena. Rakenduse õpilase vaade ühendab lugemistekstid, mõistmisülesanded ja tagasiside. Õpetaja vaates saab kavandi järgi valida õppematerjale ning jälgida õpilase edenemist.</p>
+          <p>Õpilase vaates ühendab kavand erineva raskusega tekstid, muudetava tekstisuuruse ja mõistmisülesanded. Teksti sisse saab kavandi järgi põimida mõttepause, kus õpilane vastab küsimusele ja saab tagasisidet. Õpetaja vaates saab lisada tekste, koostada ülesandeid ning jälgida õpilase edenemist.</p>
+          <p>Rakenduse kõrval kavandas rühm puuteekraani ja nuppudega eraldi seadme. Korpuse mudelisse tuli mahutada ekraan ning jätta ruumi sisemistele komponentidele. Ühes korpusevariandis joonistati välja ka tagumine tugi.</p>
         </section>
         <section id="protsess">
           <h2>Arendusprotsess</h2>
-          <ol>
-            <li>Rühm kaardistas lugemisraskused ning koostas õpilase ja juhendaja vajadustest lähtuva disainibriifi.</li>
-            <li>Paralleelselt kavandati kasutajaliides ja seadme kest. Rakendusest loodi Figmas interaktiivne prototüüp ning korpusest Solid Edge’is 3D-mudel.</li>
-            <li>Rühm koostas testülesanded õpetaja ja õpilase vaate jaoks ning kogus eripedagoogidelt tagasisidet loetavuse, juhiste ja navigeerimise kohta.</li>
+          <ol class="timeline">
+            <li>
+              <p class="timeline-date">10.–24. september</p>
+              <h3>Uurimisküsimused ja intervjuud</h3>
+              <p>Rühm täpsustas, mida funktsionaalne lugemine selle projekti jaoks tähendab. Õpetajatelt ja tugispetsialistidelt koguti näiteid võtetest, mis aitavad õpilasel teksti jälgida ja loetut mõtestada. 24. septembri kohtumisel koondati intervjuude tähelepanekud.</p>
+            </li>
+            <li>
+              <p class="timeline-date">30. september – 23. oktoober</p>
+              <h3>Kasutajavaated ja korpuse visandid</h3>
+              <p>Valmisid esimesed visandid. Rühm koostas disainibriifi, kirjeldas riistvara ja tarkvara nõudeid ning alustas rakenduse ja korpuse paralleelset arendamist. 23. oktoobril esitles rühm vahenädalal probleemi, kasutajauuringut ja esialgset prototüüpi.</p>
+            </li>
+            <li>
+              <p class="timeline-date">5.–10. november</p>
+              <h3>Rakenduse katsetamine</h3>
+              <p>Rühm jagas riistvara ja tarkvara ülesanded ning katsetas Figmas rakenduse õpilase ja õpetaja vaateid. 10. novembri eripedagoogi tagasisides hinnati teksti suuruse muutmist ja õpetaja võimalust lisada lugemismaterjali. Muutmist vajasid mõne vaate navigeerimine ja juhiste sõnastus.</p>
+            </li>
+            <li>
+              <p class="timeline-date">12.–26. november</p>
+              <h3>Korpuse viimistlemine ja detailide sobitamine</h3>
+              <p>Rühm kontrollis Solid Edge’is 3D-mudeli mõõtmeid, printis korpuse välja ning sobitas sellesse ekraani ja nupud. Päevikus märgiti, et need mahtusid prinditud korpusesse kavandatud viisil.</p>
+            </li>
           </ol>
+        </section>
+        <section id="pildid">
+          <h2>Pildid ja joonised</h2>
+          <div class="group-gallery">
+          <figure class="group-figure">
+            <a href="assets/prototuubid/valte-visandid.webp" class="photo-link" aria-label="Vaata suuremalt. Seadme esimesed visandid">
+              <img src="assets/prototuubid/valte-visandid.webp" width="1246" height="1160" alt="Käsitsi tehtud visandid seadmest ja selle toest." loading="lazy" decoding="async">
+            </a>
+            <figcaption>Seadme esimesed visandid</figcaption>
+          </figure>
+          <figure class="group-figure">
+            <a href="assets/prototuubid/valte-mudel.webp" class="photo-link" aria-label="Vaata suuremalt. Korpuse 3D-mudel">
+              <img src="assets/prototuubid/valte-mudel.webp" width="1600" height="938" alt="Lugemisseadme korpus 3D-mudeli eelvaates." loading="lazy" decoding="async">
+            </a>
+            <figcaption>Korpuse 3D-mudel</figcaption>
+          </figure>
+          <figure class="group-figure">
+            <a href="assets/prototuubid/valte-tugi.webp" class="photo-link" aria-label="Vaata suuremalt. Tagumise toe joonis">
+              <img src="assets/prototuubid/valte-tugi.webp" width="1270" height="728" alt="Seadme tagakülje ja kokkupandava toe joonis." loading="lazy" decoding="async">
+            </a>
+            <figcaption>Tagumise toe joonis</figcaption>
+          </figure>
+          <figure class="group-figure">
+            <a href="assets/prototuubid/valte-korpus.webp" class="photo-link" aria-label="Vaata suuremalt. Korpuse mudeli ja prindi võrdlus">
+              <img src="assets/prototuubid/valte-korpus.webp" width="1132" height="1194" alt="Korpuse mudel ja prinditud detail kõrvuti." loading="lazy" decoding="async">
+            </a>
+            <figcaption>Korpuse mudeli ja prindi võrdlus</figcaption>
+          </figure>
+          <figure class="group-figure">
+            <a href="assets/prototuubid/valte-lugemisvaade.webp" class="photo-link" aria-label="Vaata suuremalt. Õpilase lugemisvaate kavand">
+              <img src="assets/prototuubid/valte-lugemisvaade.webp" width="205" height="338" alt="Tumeda tausta ja muudetava tekstiga lugemisvaade." loading="lazy" decoding="async">
+            </a>
+            <figcaption>Õpilase lugemisvaate kavand</figcaption>
+          </figure>
+          <figure class="group-figure">
+            <a href="assets/prototuubid/valte-opetajavaade.webp" class="photo-link" aria-label="Vaata suuremalt. Õpetaja raamatuvaate kavand">
+              <img src="assets/prototuubid/valte-opetajavaade.webp" width="521" height="860" alt="Õpetaja raamatute haldamise vaate kavand." loading="lazy" decoding="async">
+            </a>
+            <figcaption>Õpetaja raamatuvaate kavand</figcaption>
+          </figure>
+          <figure class="group-figure">
+            <a href="assets/prototuubid/valte-testivaade.webp" class="photo-link" aria-label="Vaata suuremalt. Lugemisülesannete koostamise vaate kavand">
+              <img src="assets/prototuubid/valte-testivaade.webp" width="368" height="607" alt="Raamatute ja lugemisülesannete koostamise vaate kavand." loading="lazy" decoding="async">
+            </a>
+            <figcaption>Lugemisülesannete koostamise vaate kavand</figcaption>
+          </figure>
+          </div>
         </section>
         <section id="tulemus" class="result">
           <h2>Tulemus</h2>
-          <p>Rühm lõi rakenduse klõpsatava prototüübi ja seadmekorpuse esmase 3D-mudeli. Testijad pidasid kasulikuks teksti suuruse muutmist ja õpetaja võimalust lisada lugemismaterjali. Edasiarenduseks soovitati lihtsamaid juhiseid ja võimalust lisada teksti vahele rohkem mõistmisküsimusi.</p>
+          <p>Rühm tegi Figmas klõpsatava rakenduseprototüübi ja füüsilise korpuse, millesse sobitati ekraan ning nupud. Testijad soovitasid rõhutada olulisi tekstiosi, lihtsustada juhiseid ja võimaldada õpetajal lisada rohkem mõistmisküsimusi.</p>
+          <p>Kasutustest andis tagasisidet seadme ja rakenduse kavandi kohta. Lugemistulemuste muutumist rühm nende katsetega ei mõõtnud.</p>
         </section>
-        <p class="source"><strong>Allikad.</strong> Rühma disainipäevik, disainibriif, tehniline kirjeldus ja rakenduse testimise kokkuvõte.</p>
-      </article>
+        <p class="source"><strong>Allikad.</strong> Rühma disainipäevik, disainibriif, tehniline kirjeldus, 23. oktoobri esitluse tekst ja rakenduse testimise kokkuvõte. Illustratsioonid pärinevad dokumendist „Fotod tootest” ning rühma kasutajaliidese kavanditest.</p>
+      </div>
     </div>
   </main>
   <footer class="site-footer">
@@ -76,5 +148,12 @@
       <a href="https://elu.tlu.ee/et/projektid/disainmotlemine-3d-modelleerimine-ja-robootika-0">Projekti kirjeldus ELU veebis <span aria-hidden="true">↗</span></a>
     </div>
   </footer>
+  <dialog class="photo-dialog" aria-labelledby="pildi-pealkiri">
+    <form method="dialog">
+      <button type="submit">Sulge</button>
+    </form>
+    <div class="photo-frame"></div>
+    <p id="pildi-pealkiri">Suurendatud pilt</p>
+  </dialog>
 </body>
 </html>

@@ -3,71 +3,131 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Värvimuutev valguslahendus, mis aitab mobiilsel noorsootööl üritustel tähelepanu äratada.">
+  <meta name="description" content="Lääne-Harju mobiilse noorsootöö jaoks loodud 3D-prinditud lamp, mille kuplil ilmub kujutis nähtavale tagantvalguses.">
   <title>Litofaanialamp | Disainmõtlemine, 3D ja robootika</title>
   <link rel="stylesheet" href="assets/styles.css">
-  <script src="assets/navigation.js" defer></script>
+  <script src="assets/gallery.js" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#sisu">Liigu sisu juurde</a>
   <header class="site-header">
     <div class="wrap header-inner">
       <a class="site-name" href="index.html">Disainmõtlemine, 3D ja robootika</a>
-      <nav class="site-nav" aria-label="Põhinavigatsioon">
-        <a href="index.html">Avaleht</a>
-        <details class="group-menu">
-          <summary>Rühmad</summary>
-          <ul>
-            <li><a href="litofaanialamp.html" aria-current="page">Litofaanialamp</a></li>
-            <li><a href="koolikoti-konks.html">Koolikoti konks</a></li>
-            <li><a href="valt-e.html">Lugemist toetav seade Valt-e</a></li>
-            <li><a href="automaatkastmine.html">Siseaia automaatkastmine</a></li>
-          </ul>
-        </details>
+      <nav class="site-nav" aria-label="Rühmade projektid">
+        <ul>
+          <li><a href="litofaanialamp.html" aria-current="page">Litofaanialamp</a></li>
+          <li><a href="koolikoti-konks.html">Koolikoti konks</a></li>
+          <li><a href="valt-e.html">Lugemisseade Valt-e</a></li>
+          <li><a href="automaatkastmine.html">Siseaia automaatkastmine</a></li>
+        </ul>
       </nav>
     </div>
   </header>
   <main id="sisu">
-    <div class="detail-hero">
-      <div class="wrap">
-        <a class="back-link" href="index.html#ruhmad"><span aria-hidden="true">←</span> Kõik rühmad</a>
-        <p class="eyebrow">Rühm 1 · Valgusdisain ja 3D-print</p>
-        <h1>Litofaanialamp</h1>
-        <p class="detail-summary">Värvimuutev valguslahendus, mis aitab mobiilsel noorsootööl üritustel tähelepanu äratada.</p>
+    <section class="detail-hero" aria-labelledby="ruhma-pealkiri">
+      <div class="wrap detail-hero-grid">
+        <div>
+          <a class="back-link" href="index.html#ruhmad"><span aria-hidden="true">←</span> Kõik rühmad</a>
+          <p class="eyebrow">Rühm 1 · Valgusdisain ja 3D-print</p>
+          <h1 id="ruhma-pealkiri">Litofaanialamp</h1>
+          <p class="detail-summary">Lääne-Harju mobiilse noorsootöö jaoks loodud 3D-prinditud lamp, mille kuplil ilmub kujutis nähtavale tagantvalguses.</p>
+        </div>
+        <figure class="group-figure group-figure-featured">
+          <a href="assets/prototuubid/litofaania-esimene-print.webp" class="photo-link" aria-label="Vaata suuremalt. Esimene silindrikujuline prooviprint">
+            <img src="assets/prototuubid/litofaania-esimene-print.webp" width="900" height="1600" alt="Kuldse valgusega silindrikujuline litofaaniaprint." decoding="async">
+          </a>
+          <figcaption>Esimene silindrikujuline prooviprint</figcaption>
+        </figure>
       </div>
-    </div>
+    </section>
     <div class="wrap detail-layout">
       <nav class="section-nav" aria-label="Selle lehe jaotised">
         <ul>
           <li><a href="#probleem">Probleem ja eesmärk</a></li>
           <li><a href="#lahendus">Lahendus</a></li>
           <li><a href="#protsess">Arendusprotsess</a></li>
+          <li><a href="#pildid">Pildid ja joonised</a></li>
           <li><a href="#tulemus">Tulemus</a></li>
         </ul>
       </nav>
-      <article class="detail-content" aria-label="Litofaanialamp">
+      <div class="detail-content">
         <section id="probleem">
           <h2>Probleem ja eesmärk</h2>
-          <p>Lääne-Harju mobiilne noorsootöö ehk MoNo soovis saada noorte seas paremini märgatavaks. Rühma ülesanne oli luua noorteüritustele pilkupüüdev lamp, mis tekitaks uudishimu ja aitaks alustada vestlust noorsootöötajaga.</p>
+          <p>Lääne-Harju mobiilne noorsootöö ehk MoNo käib noortega kohtumas nende igapäevastes keskkondades. Uue algatusena vajas MoNo viisi, kuidas teha end üritustel märgatavaks ja anda vähemalt 13-aastastele noortele põhjus lähemale tulla ja vestlust alustada.</p>
+          <p>Rühm küsis tellijalt kirjalikus intervjuus, kus lampi kasutatakse, kuidas see võiks välja näha ning kui kiiresti peab seda saama üles seada. Vastustest kujunesid põhinõuded: lamp võiks olla pilkupüüdev, kaasaskantav ja vastupidav ning sellel olev MoNo kujutis peab jääma äratuntavaks.</p>
         </section>
         <section id="lahendus">
           <h2>Lahendus</h2>
-          <p>Silindrikujuline 3D-prinditud kuppel kasutab litofaaniat. Õhemad kohad lasevad läbi rohkem valgust kui paksemad, nii et taustvalgus toob kuplile modelleeritud kujutise ja teksti nähtavale. Puldiga juhitava pirni värvi saab muuta.</p>
+          <p>Rühm kavandas silindrikujulise litofaaniakupli. Kujutise heledad ja tumedad alad tekivad prinditud seina paksuse erinevusest: õhemad kohad lasevad läbi rohkem valgust. Kupli 3D-mudeli loomisel kasutas rühm ItsLithot.</p>
+          <p>Esimene väike prooviprint aitas kontrollida, kas kujutis on valgustamisel loetav. Järgmine kuppel tehti suurem, et seda oleks kaugemalt näha. Värvimuutev pirn võimaldas proovida sama kujutist eri valgustes.</p>
         </section>
         <section id="protsess">
           <h2>Arendusprotsess</h2>
-          <ol>
-            <li>Rühm küsitles tellijat ning sõnastas nõuded lambi nähtavusele, kaasaskantavusele ja ülesseadmisele.</li>
-            <li>ItsLithos loodi esimesed mudelid. Silindrikujulist prooviprinti valgustati eri värvidega ja võeti vaatlemiseks kaasa noorteõhtule.</li>
-            <li>Seejärel tehti suurem prooviprint ning täpsustati kujutise paigutust ja lambi valgustust.</li>
+          <ol class="timeline">
+            <li>
+              <p class="timeline-date">10.–24. september</p>
+              <h3>Ideest kasutajauuringuni</h3>
+              <p>Esimesel kohtumisel valiti litofaania idee. Seejärel otsiti sobiv tellija ja koondati MoNo vastused kasutajauuringusse. Rühm kirjeldas kaht esialgset kasutajapersoonat: noort ja noorsootöötajat.</p>
+            </li>
+            <li>
+              <p class="timeline-date">1.–8. oktoober</p>
+              <h3>Disainibriif ja esimesed mudelid</h3>
+              <p>Rühm täpsustas tellijaga disainiootusi, sõnastas nõuded ning kirjeldas tehnilisi valikuid. Esialgsete 3D-mudelitega võrreldi kuju ja kujutise paigutust.</p>
+            </li>
+            <li>
+              <p class="timeline-date">15.–23. oktoober</p>
+              <h3>Esimene prooviprint ja tagasiside</h3>
+              <p>15. oktoobril saadi esimene silindrikujuline print. Seda valgustati olemasoleva lambiga ja võeti kaasa noorteõhtule, kus rühm jälgis noorte huvi. Noortelt eraldi tagasisidet ei kogutud. 23. oktoobril tutvustas rühm tööd vahenädalal.</p>
+            </li>
+            <li>
+              <p class="timeline-date">5.–26. november</p>
+              <h3>Suurem kuppel ja eri valgusvärvid</h3>
+              <p>5. novembril otsustati silindrilise kuju juurde jääda ja teha umbes 25 cm kõrgune kuppel. Novembris valmis teine prooviprint, kus katsetati õhemat seina ning paksemaid kujutise ja teksti alasid. Rühm võrdles valgusvärve ning tegeles kuu lõpus lambi aluse kujundamisega.</p>
+            </li>
           </ol>
+        </section>
+        <section id="pildid">
+          <h2>Pildid ja joonised</h2>
+          <div class="group-gallery">
+          <figure class="group-figure">
+            <a href="assets/prototuubid/litofaania-mudel.webp" class="photo-link" aria-label="Vaata suuremalt. Esimese kupli 3D-mudel">
+              <img src="assets/prototuubid/litofaania-mudel.webp" width="1200" height="1600" alt="Silindrikujuline MoNo litofaania 3D-mudeli eelvaates." loading="lazy" decoding="async">
+            </a>
+            <figcaption>Esimese kupli 3D-mudel</figcaption>
+          </figure>
+          <figure class="group-figure">
+            <a href="assets/prototuubid/litofaania-suurem-kuppel.webp" class="photo-link" aria-label="Vaata suuremalt. Suurem prooviprint enne valgustamist">
+              <img src="assets/prototuubid/litofaania-suurem-kuppel.webp" width="1200" height="1600" alt="Suurem valgustamata kuppel töölaual." loading="lazy" decoding="async">
+            </a>
+            <figcaption>Suurem prooviprint enne valgustamist</figcaption>
+          </figure>
+          <figure class="group-figure">
+            <a href="assets/prototuubid/litofaania-valge-valgus.webp" class="photo-link" aria-label="Vaata suuremalt. Kuppel valge valgusega">
+              <img src="assets/prototuubid/litofaania-valge-valgus.webp" width="1600" height="901" alt="Kupli kujutis valges tagantvalguses." loading="lazy" decoding="async">
+            </a>
+            <figcaption>Kuppel valge valgusega</figcaption>
+          </figure>
+          <figure class="group-figure">
+            <a href="assets/prototuubid/litofaania-sinine-valgus.webp" class="photo-link" aria-label="Vaata suuremalt. Kuppel sinise valgusega">
+              <img src="assets/prototuubid/litofaania-sinine-valgus.webp" width="1600" height="1200" alt="Kupli kujutis sinises tagantvalguses." loading="lazy" decoding="async">
+            </a>
+            <figcaption>Kuppel sinise valgusega</figcaption>
+          </figure>
+          <figure class="group-figure">
+            <a href="assets/prototuubid/litofaania-roosa-valgus.webp" class="photo-link" aria-label="Vaata suuremalt. Kuppel roosa valgusega">
+              <img src="assets/prototuubid/litofaania-roosa-valgus.webp" width="1600" height="1200" alt="Kupli kujutis roosas tagantvalguses." loading="lazy" decoding="async">
+            </a>
+            <figcaption>Kuppel roosa valgusega</figcaption>
+          </figure>
+          </div>
         </section>
         <section id="tulemus" class="result">
           <h2>Tulemus</h2>
-          <p>Valmis värvimuutva pirniga valguslahenduse prototüüp, mis töötab vooluvõrgust. Katsetused näitasid, et valguse värv muudab kupli üldmuljet ja kujutise nähtavust. Akupangatoide jäi edasiarenduse võimaluseks.</p>
+          <p>Rühma kokkuvõtte järgi valmis puldiga juhitava värvimuutva pirniga prototüüp, mis töötab vooluvõrgust. Eri värvidega katsed näitasid, kui palju mõjutab valgus kupli üldmuljet ja kujutise nähtavust.</p>
+          <p>Akupangaga töötav USB-toide ja programmeeritavad valgusefektid jäid edasiarenduse võimalusteks. Noorteõhtu vaatlus andis esimese kasutuskogemuse, ent rühm ei mõõtnud, kui sageli lamp vestlusi algatada aitas.</p>
         </section>
-        <p class="source"><strong>Allikad.</strong> Rühma projekti kokkuvõte, disainipäevik ja tehniline kirjeldus.</p>
-      </article>
+        <p class="source"><strong>Allikad.</strong> Rühma disainipäevik, disainibriif, tehniline kirjeldus ja projekti kokkuvõte. Fotod ja mudelivaated pärinevad rühma kokkuvõtte pildikaustast.</p>
+      </div>
     </div>
   </main>
   <footer class="site-footer">
@@ -76,5 +136,12 @@
       <a href="https://elu.tlu.ee/et/projektid/disainmotlemine-3d-modelleerimine-ja-robootika-0">Projekti kirjeldus ELU veebis <span aria-hidden="true">↗</span></a>
     </div>
   </footer>
+  <dialog class="photo-dialog" aria-labelledby="pildi-pealkiri">
+    <form method="dialog">
+      <button type="submit">Sulge</button>
+    </form>
+    <div class="photo-frame"></div>
+    <p id="pildi-pealkiri">Suurendatud pilt</p>
+  </dialog>
 </body>
 </html>
