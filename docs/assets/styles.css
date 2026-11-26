@@ -4,7 +4,6 @@
   --text: #302d46;
   --muted: #58546d;
   --accent: #9c005d;
-  --bright: #ff83c6;
   --surface: #f5f4fa;
   --line: #dedbe9;
   font-family: system-ui, sans-serif;
@@ -146,10 +145,42 @@ p {
   text-decoration: underline;
 }
 
+.home-page {
+  --ink: #332f47;
+  --text: #403c4d;
+  --muted: #585467;
+  --accent: #57496d;
+  --surface: #f0edf5;
+  --line: #ded8e5;
+  background: #fcfbf8;
+  font-size: 1.125rem;
+}
+
+.home-page .site-header {
+  background: #fffcf8;
+}
+
+.home-nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .25rem 1.15rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.home-nav a {
+  display: inline-block;
+  padding-block: .35rem;
+  color: var(--ink);
+  font-size: 1rem;
+  font-weight: 650;
+  text-decoration-color: #9c91ad;
+}
+
 .hero {
-  color: white;
-  background: var(--ink);
-  border-bottom: .35rem solid var(--accent);
+  background: var(--surface);
+  border-bottom: 1px solid var(--line);
 }
 
 .hero-grid {
@@ -157,11 +188,7 @@ p {
   grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr);
   gap: clamp(1.75rem, 4vw, 4.5rem);
   align-items: center;
-  padding-block: clamp(2.75rem, 6vw, 5.25rem);
-}
-
-.hero h1 {
-  color: inherit;
+  padding-block: clamp(2.2rem, 5vw, 4.25rem);
 }
 
 .eyebrow {
@@ -173,14 +200,14 @@ p {
 }
 
 .hero .eyebrow {
-  color: var(--bright);
-  margin-bottom: 1rem;
+  margin-bottom: .85rem;
+  font-size: .88rem;
 }
 
 .hero-copy > p:not(.eyebrow) {
   margin-top: 1.25rem;
   max-width: 55ch;
-  color: #f2effa;
+  font-size: clamp(1.125rem, 2vw, 1.25rem);
 }
 
 .button {
@@ -189,18 +216,26 @@ p {
   gap: .8rem;
   margin-top: 1.6rem;
   padding: .7rem 1rem;
-  background: var(--bright);
-  color: #251842;
+  border: 1px solid #c9c0d8;
+  border-radius: .6rem;
+  background: #ddd4eb;
+  color: var(--ink);
   font-weight: 700;
   text-decoration: none;
 }
 
 .button:hover {
-  background: #ffabd9;
+  background: #d3c7e4;
 }
 
-.button:focus-visible {
-  outline-color: white;
+.hero-figure {
+  margin: 0;
+}
+
+.hero-figure figcaption {
+  margin-top: .5rem;
+  color: var(--muted);
+  font-size: .9rem;
 }
 
 .hero-image {
@@ -209,17 +244,12 @@ p {
   height: auto;
   aspect-ratio: 4 / 3;
   object-fit: cover;
-  border: 1px solid #ffffff44;
-}
-
-.project-overview {
-  padding-block: 1.65rem;
-  font-size: 1.05rem;
+  border: 1px solid var(--line);
+  border-radius: 1rem;
 }
 
 .projects {
   padding-block: clamp(2.1rem, 5vw, 3.75rem);
-  background: var(--surface);
 }
 
 .project-grid {
@@ -232,10 +262,38 @@ p {
 }
 
 .project-card {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  column-gap: 1rem;
+  align-content: start;
   padding: clamp(1.15rem, 3vw, 1.8rem);
   border: 1px solid var(--line);
-  border-top: 3px solid var(--accent);
-  background: white;
+  border-radius: .9rem;
+}
+
+.card-lamp {
+  background: #f2edf7;
+}
+
+.card-hook {
+  background: #f7eee2;
+}
+
+.card-reader {
+  background: #edf2f8;
+}
+
+.card-water {
+  background: #edf3eb;
+}
+
+.project-icon {
+  grid-row: span 3;
+  width: 3.25rem;
+  height: 3.25rem;
+  border: 1px solid var(--line);
+  border-radius: .65rem;
+  background: #fffcf8;
 }
 
 .project-card h3 {
@@ -245,7 +303,7 @@ p {
 
 .project-card h3 a {
   color: var(--ink);
-  text-decoration-color: var(--line);
+  text-decoration-color: #9c91ad;
 }
 
 .project-card h3 a:hover,
@@ -344,12 +402,8 @@ p {
 }
 
 @media (max-width: 47rem) {
-  .hero-grid, .detail-layout {
+  .hero-grid, .detail-layout, .project-grid {
     grid-template-columns: minmax(0, 1fr);
-  }
-
-  .hero-image {
-    aspect-ratio: 16 / 9;
   }
 }
 
@@ -363,8 +417,10 @@ p {
     justify-content: flex-start;
   }
 
-  .project-grid {
-    grid-template-columns: minmax(0, 1fr);
+  .home-nav ul {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0 .75rem;
   }
 
   .group-menu {
@@ -373,5 +429,16 @@ p {
 
   .group-menu ul {
     inset-inline: 0 auto;
+  }
+}
+
+@media (max-width: 24rem) {
+  .project-card {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .project-icon {
+    grid-row: auto;
+    margin-bottom: .65rem;
   }
 }
