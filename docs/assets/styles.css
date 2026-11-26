@@ -308,7 +308,7 @@ p {
 }
 
 .detail-content section > p,
-.timeline li > p:last-child {
+.timeline details > p {
   max-width: 68ch;
 }
 
@@ -330,19 +330,27 @@ p {
   gap: .75rem;
   margin: 0;
   padding: 0;
-  list-style-position: inside;
+  list-style: none;
 }
 
 .timeline li {
-  padding: 1rem 1.2rem;
   border: 1px solid var(--line);
   border-radius: .75rem;
   background: var(--surface);
 }
 
-.timeline li::marker {
-  color: var(--accent);
-  font-weight: 750;
+.timeline summary {
+  padding: .8rem 1.2rem;
+  cursor: pointer;
+}
+
+.timeline summary:hover {
+  background: #e8e2f0;
+  border-radius: .75rem;
+}
+
+.timeline details > p {
+  padding: 0 1.2rem 1rem;
 }
 
 .timeline-date {
@@ -352,9 +360,12 @@ p {
   font-weight: 700;
 }
 
-.timeline h3 {
-  margin: .4rem 0 .5rem;
+.timeline-title {
+  display: block;
+  margin-top: .2rem;
+  color: var(--ink);
   font-size: 1.2rem;
+  font-weight: 700;
 }
 
 .group-gallery {
@@ -375,30 +386,22 @@ p {
 
 .group-figure a {
   display: block;
-  border: 1px solid var(--line);
+  width: fit-content;
+  max-width: 100%;
   border-radius: .75rem;
-  background: #f0edf5;
-}
-
-.group-figure a:hover {
-  border-color: var(--accent);
 }
 
 .group-figure img {
   display: block;
-  width: 100%;
+  width: auto;
+  max-width: 100%;
+  max-height: 16rem;
   height: auto;
-  aspect-ratio: 4 / 3;
-  object-fit: contain;
   border-radius: inherit;
 }
 
-.group-figure-featured a {
-  background: #fcfbf8;
-}
-
 .group-figure-featured img {
-  aspect-ratio: 3 / 2;
+  max-height: 23rem;
 }
 
 .group-figure figcaption {
@@ -459,6 +462,11 @@ p {
   margin-top: 1.1rem;
   color: var(--muted);
   font-size: .9rem;
+}
+
+.source ul {
+  margin: 0;
+  padding-left: 1.25rem;
 }
 
 .site-footer {

@@ -1,4 +1,4 @@
-# Disainmõtlemine, 3D modelleerimine ja robootika
+# Disainmõtlemine, 3D-modelleerimine ja robootika
 
 Tallinna Ülikooli ELU projekti tutvustav veebileht, millel on avaleht ja neli ühesuguse ülesehitusega rühmalehte. Sisu põhineb [ELU projekti kirjeldusel](https://elu.tlu.ee/et/projektid/disainmotlemine-3d-modelleerimine-ja-robootika-0) ja rühmade töödokumentidel.
 
