@@ -1,7 +1,6 @@
 # Näidisprompt
 
-```
-text
+```text
 Veebilehe struktuur:
 Avaleht - projekti üldine kirjeldus
 Alamlehed - igal grupil oma, mis kirjeldab detailsemalt nende projekti.
