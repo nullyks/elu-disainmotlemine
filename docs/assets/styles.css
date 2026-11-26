@@ -451,10 +451,19 @@ p {
   margin-top: .45rem;
 }
 
+.design-summary,
 .result {
   padding: 1.2rem 1.35rem;
-  border: 1px solid #d7e4d4;
+  border: 1px solid var(--line);
   border-radius: .75rem;
+}
+
+.design-summary {
+  background: var(--surface);
+}
+
+.result {
+  border-color: #d7e4d4;
   background: #edf3eb;
 }
 
